@@ -13,7 +13,7 @@ jobs:
           # Must be relative path from root
           paths:
             - echo-output      
-  testa:
+  test a:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
@@ -23,7 +23,7 @@ jobs:
 
       - run: cat my_workspace/echo-output
           
-  testb:
+  test b:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
